@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Barlow',-apple-system,sans-serif;color:#1a1a1a;-webkit-font-smoothing:antialiased;background:#0c0c0c;}
+  a{text-decoration:none;color:inherit;}
+  input,textarea,select,button{font-family:inherit;}
+  ::placeholder{color:#8a8a8a;}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="max-width:100%;overflow-x:hidden;background:#fff;">
+
+  <!-- ===== HEADER ===== -->
+  <header style="background:#0b0b0b;padding:14px clamp(16px,4vw,52px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;position:sticky;top:0;z-index:60;border-bottom:1px solid #1c1c1c;">
+    <div style="display:flex;align-items:center;gap:14px;">
+      <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex:none;">
+        <path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/><path d="M12 6.5c-1.2.8-1.2 2.2 0 3s1.2 2.2 0 3" stroke-width="1.3"/>
+      </svg>
+      <div style="line-height:1;">
+        <div style="font-family:'Oswald';font-weight:700;color:#fff;font-size:clamp(17px,2vw,21px);letter-spacing:.5px;">RISE &amp; SHINE</div>
+        <div style="font-family:'Oswald';font-weight:700;color:#fff;font-size:clamp(17px,2vw,21px);letter-spacing:.5px;">ELECTRICAL</div>
+        <div style="font-family:'Oswald';font-weight:500;color:#F8A91B;font-size:9.5px;letter-spacing:1.8px;margin-top:3px;">THE PEOPLE'S ELECTRICIAN</div>
+      </div>
+    </div>
+    <nav style="display:flex;gap:clamp(12px,1.8vw,28px);flex-wrap:wrap;align-items:center;font-family:'Oswald';font-weight:500;font-size:14px;letter-spacing:1px;">
+      <a href="#home" style="color:#F8A91B;border-bottom:2px solid #F8A91B;padding-bottom:3px;">HOME</a>
+      <a href="#services" style="color:#fff;">SERVICES</a>
+      <a href="#about" style="color:#fff;">ABOUT</a>
+      <a href="#reviews" style="color:#fff;">REVIEWS</a>
+      <a href="#areas" style="color:#fff;">SERVICE AREAS</a>
+      <a href="#contact" style="color:#fff;">CONTACT</a>
+    </nav>
+    <a href="tel:5046101298" style="display:inline-flex;align-items:center;gap:9px;background:#F8A91B;color:#0b0b0b;font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;padding:11px 22px;border-radius:999px;">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="#0b0b0b"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>
+      504-610-1298
+    </a>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" style="background:#0b0b0b;display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));align-items:stretch;position:relative;">
+    <div style="padding:clamp(36px,5vw,64px) clamp(20px,4vw,56px);display:flex;flex-direction:column;justify-content:center;z-index:2;">
+      <h1 style="font-family:'Oswald';font-weight:700;line-height:.92;letter-spacing:-.5px;">
+        <span style="display:block;color:#fff;font-size:clamp(40px,6.5vw,72px);">THE PEOPLE'S</span>
+        <span style="display:block;color:#F8A91B;font-size:clamp(54px,10vw,118px);">ELECTRICIAN</span>
+      </h1>
+      <p style="color:#e9e9e9;font-size:clamp(17px,1.6vw,21px);font-weight:500;margin-top:18px;line-height:1.45;">State Licensed Master Electrician<br>DBE Certified Electrical Contractor</p>
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-top:24px;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#F8A91B" style="flex:none;margin-top:2px;"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+        <div style="line-height:1.3;">
+          <div style="font-family:'Oswald';font-weight:600;color:#F8A91B;font-size:clamp(16px,1.6vw,19px);letter-spacing:.5px;">SERVING GREATER NEW ORLEANS</div>
+          <div style="color:#fff;font-weight:600;font-size:13px;letter-spacing:1.5px;">RESIDENTIAL &amp; COMMERCIAL</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;">
+        <a href="tel:5046101298" style="display:inline-flex;align-items:center;gap:12px;background:#F8A91B;color:#0b0b0b;padding:13px 26px;border-radius:6px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="#0b0b0b"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>
+          <span style="text-align:left;line-height:1.05;"><span style="display:block;font-family:'Oswald';font-weight:600;font-size:13px;letter-spacing:1px;">CALL NOW</span><span style="display:block;font-family:'Oswald';font-weight:700;font-size:19px;">504-610-1298</span></span>
+        </a>
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:12px;background:#141414;border:2px solid #F8A91B;color:#fff;padding:13px 24px;border-radius:6px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.8"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg>
+          <span style="text-align:left;line-height:1.05;font-family:'Oswald';font-weight:600;"><span style="display:block;font-size:13px;letter-spacing:1px;">REQUEST</span><span style="display:block;font-size:19px;">AN ESTIMATE</span></span>
+        </a>
+      </div>
+    </div>
+    <div style="position:relative;min-height:clamp(300px,40vw,520px);">
+      <image-slot id="hero-skyline" shape="rect" fit="cover" src="assets/skyline.png" placeholder="New Orleans skyline at dusk" style="position:absolute;inset:0;width:100%;height:100%;"></image-slot>
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,#0b0b0b 0%,rgba(11,11,11,.55) 18%,rgba(11,11,11,0) 45%);pointer-events:none;"></div>
+    </div>
+  </section>
+
+  <!-- ===== OUR SERVICES ===== -->
+  <section id="services" style="background:#f4f3f1;padding:clamp(44px,5vw,72px) clamp(16px,4vw,52px);">
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:clamp(34px,4vw,52px);">
+      <span style="width:clamp(30px,6vw,60px);height:3px;background:#F8A91B;"></span>
+      <h2 style="font-family:'Oswald';font-weight:700;font-size:clamp(26px,3.4vw,38px);letter-spacing:1px;color:#141414;">OUR SERVICES</h2>
+      <span style="width:clamp(30px,6vw,60px);height:3px;background:#F8A91B;"></span>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;">
+      <div style="text-align:center;padding:14px 12px;border-right:1px solid #e3e1dc;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="m9.5 13 1.8 1.8L15 11" stroke="#F8A91B" stroke-width="2"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">ELECTRICAL<br>INSPECTIONS</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Ensure safety and code compliance</p>
+      </div>
+      <div style="text-align:center;padding:14px 12px;border-right:1px solid #e3e1dc;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="round" style="margin-bottom:14px;"><rect x="5" y="3" width="14" height="18" rx="1.5"/><rect x="8" y="6.5" width="3" height="3" fill="#F8A91B" stroke="none"/><rect x="13" y="6.5" width="3" height="3" fill="#F8A91B" stroke="none"/><rect x="8" y="11" width="3" height="3" fill="#F8A91B" stroke="none"/><rect x="13" y="11" width="3" height="3" fill="#F8A91B" stroke="none"/><rect x="8" y="15.5" width="3" height="3" fill="#F8A91B" stroke="none"/><rect x="13" y="15.5" width="3" height="3" fill="#F8A91B" stroke="none"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">PANELS &amp;<br>BREAKERS</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Upgrades, replacements &amp; installations</p>
+      </div>
+      <div style="text-align:center;padding:14px 12px;border-right:1px solid #e3e1dc;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><path d="M9 18h6M10 21h4" stroke="#1a1a1a"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z" fill="#F8A91B" stroke="#1a1a1a"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">LED<br>LIGHTING</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Energy-efficient lighting solutions</p>
+      </div>
+      <div style="text-align:center;padding:14px 12px;border-right:1px solid #e3e1dc;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><path d="M3 7.5 16.5 5l.8 4.2L4 11.7Z"/><circle cx="9" cy="8.4" r="1.4" fill="#F8A91B" stroke="none"/><path d="m17 7 3.5-1.3M6 11.7V20M6 20h7M13 16l3 4"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">SECURITY<br>CAMERAS</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Protect your home or business</p>
+      </div>
+      <div style="text-align:center;padding:14px 12px;border-right:1px solid #e3e1dc;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linejoin="round" style="margin-bottom:14px;"><rect x="6" y="3" width="12" height="13" rx="2"/><path d="M9 16v3M15 16v3M7 19h10v2H7z" fill="#F8A91B" stroke="none"/><rect x="9" y="6" width="2" height="3" fill="#1a1a1a" stroke="none"/><rect x="13" y="6" width="2" height="3" fill="#1a1a1a" stroke="none"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">DATA /<br>INTERNET</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Wired &amp; wireless network solutions</p>
+      </div>
+      <div style="text-align:center;padding:14px 12px;border-right:1px solid #e3e1dc;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><circle cx="12" cy="12" r="3" fill="#F8A91B" stroke="#1a1a1a"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">AUTOMATION<br>SYSTEMS</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Smart home &amp; business automation</p>
+      </div>
+      <div style="text-align:center;padding:14px 12px;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><path d="M3 11 12 3l9 8"/><path d="M5 9.5V21h14V9.5"/><rect x="10" y="13" width="4" height="4" fill="#F8A91B" stroke="#1a1a1a"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:15px;line-height:1.15;letter-spacing:.5px;color:#141414;">RESIDENTIAL &amp;<br>COMMERCIAL</h3>
+        <p style="font-size:13px;color:#6a6a6a;margin-top:8px;line-height:1.4;">Quality service for every project</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE ===== -->
+  <section style="background:#101010;padding:clamp(44px,5vw,72px) clamp(16px,4vw,52px);background-image:radial-gradient(circle at 1px 1px,#1d1d1d 1px,transparent 0);background-size:18px 18px;">
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:clamp(34px,4vw,52px);flex-wrap:wrap;text-align:center;">
+      <span style="width:clamp(24px,4vw,46px);height:3px;background:#F8A91B;"></span>
+      <h2 style="font-family:'Oswald';font-weight:700;font-size:clamp(22px,3.2vw,36px);letter-spacing:1px;color:#fff;">WHY CHOOSE <span style="color:#F8A91B;">RISE &amp; SHINE ELECTRICAL</span>?</h2>
+      <span style="width:clamp(24px,4vw,46px);height:3px;background:#F8A91B;"></span>
+    </div>
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;">
+      <div style="text-align:center;padding:10px 14px;border-right:1px solid #2a2a2a;">
+        <svg width="50" height="50" viewBox="0 0 24 24" style="margin-bottom:14px;"><path d="M12 2.2 4.5 5v6.5c0 4.7 3.2 8 7.5 9.3 4.3-1.3 7.5-4.6 7.5-9.3V5Z" fill="#F8A91B"/><circle cx="12" cy="10" r="2.1" fill="#101010"/><path d="M8.4 15.5a3.6 3.6 0 0 1 7.2 0Z" fill="#101010"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;color:#fff;line-height:1.15;">18+ YEARS<br>EXPERIENCE</h3>
+        <p style="font-size:13px;color:#9a9a9a;margin-top:8px;line-height:1.4;">Decades of hands-on electrical expertise</p>
+      </div>
+      <div style="text-align:center;padding:10px 14px;border-right:1px solid #2a2a2a;">
+        <svg width="50" height="50" viewBox="0 0 24 24" style="margin-bottom:14px;"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" fill="#F8A91B"/><path d="m9 12 2 2 4-4" fill="none" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;color:#fff;line-height:1.15;">STATE LICENSED<br>MASTER ELECTRICIAN</h3>
+        <p style="font-size:13px;color:#9a9a9a;margin-top:8px;line-height:1.4;">Licensed for your peace of mind</p>
+      </div>
+      <div style="text-align:center;padding:10px 14px;border-right:1px solid #2a2a2a;">
+        <svg width="50" height="50" viewBox="0 0 24 24" style="margin-bottom:14px;"><path d="M11.48 3.5a.6.6 0 0 1 1.04 0l2.36 4.78 5.27.77a.6.6 0 0 1 .33 1.02l-3.81 3.72.9 5.25a.6.6 0 0 1-.87.63L12 17.77l-4.72 2.48a.6.6 0 0 1-.87-.63l.9-5.25-3.81-3.72a.6.6 0 0 1 .33-1.02l5.27-.77Z" fill="#F8A91B"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;color:#fff;line-height:1.15;">DBE CERTIFIED<br>CONTRACTOR</h3>
+        <p style="font-size:13px;color:#9a9a9a;margin-top:8px;line-height:1.4;">Disadvantaged Business Enterprise Certified</p>
+      </div>
+      <div style="text-align:center;padding:10px 14px;border-right:1px solid #2a2a2a;">
+        <svg width="50" height="50" viewBox="0 0 24 24" style="margin-bottom:14px;"><path d="M12 2.2 4.5 5v6.5c0 4.7 3.2 8 7.5 9.3 4.3-1.3 7.5-4.6 7.5-9.3V5Z" fill="#F8A91B"/><path d="m8.6 12 2.3 2.3L15.6 9.6" fill="none" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;color:#fff;line-height:1.15;">FULLY INSURED<br>&amp; BONDED</h3>
+        <p style="font-size:13px;color:#9a9a9a;margin-top:8px;line-height:1.4;">Your property is protected</p>
+      </div>
+      <div style="text-align:center;padding:10px 14px;border-right:1px solid #2a2a2a;">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><circle cx="12.5" cy="13" r="7.3"/><path d="M12.5 9.3V13l2.6 1.6"/><path d="M5.5 5.2 3.2 7.4M5.2 4.8a8.5 8.5 0 0 1 3.4-1.7"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;color:#fff;line-height:1.15;">RELIABLE &amp;<br>ON TIME</h3>
+        <p style="font-size:13px;color:#9a9a9a;margin-top:8px;line-height:1.4;">We show up and get the job done right</p>
+      </div>
+      <div style="text-align:center;padding:10px 14px;">
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:14px;"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></svg>
+        <h3 style="font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:.5px;color:#fff;line-height:1.15;">HONEST &amp;<br>DEPENDABLE</h3>
+        <p style="font-size:13px;color:#9a9a9a;margin-top:8px;line-height:1.4;">The people's electrician for a reason</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" style="background:#f4f3f1;padding:clamp(40px,4.5vw,64px) clamp(16px,4vw,52px);">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,3vw,40px);align-items:start;">
+      <image-slot id="about-photo" shape="rounded" radius="6" fit="cover" placeholder="Electrician working on panel" style="width:100%;height:clamp(300px,28vw,360px);"></image-slot>
+      <div>
+        <div style="font-family:'Oswald';font-weight:600;color:#F8A91B;font-size:15px;letter-spacing:2px;border-bottom:1px solid #ddd;padding-bottom:6px;margin-bottom:12px;">ABOUT</div>
+        <h2 style="font-family:'Oswald';font-weight:700;font-size:clamp(26px,3vw,34px);letter-spacing:.5px;color:#141414;line-height:1;">L. RAS JORDAN</h2>
+        <div style="font-family:'Oswald';font-weight:600;color:#F8A91B;font-size:16px;letter-spacing:1.5px;margin-top:4px;">THE PEOPLE'S ELECTRICIAN</div>
+        <p style="font-size:14.5px;color:#555;line-height:1.65;margin-top:16px;">With over 18 years of experience, I built Rise &amp; Shine Electrical on honesty, hard work, and a commitment to doing the job right the first time. As a State Licensed Master Electrician and DBE Certified Contractor, I take pride in providing safe, reliable, and high-quality electrical services for homes and businesses across Greater New Orleans.</p>
+        <div style="font-family:'Dancing Script';font-weight:700;font-size:30px;color:#1a1a1a;margin-top:18px;">L. Ras Jordan</div>
+        <div style="font-size:13px;color:#777;margin-top:2px;">State Licensed Master Electrician</div>
+      </div>
+      <div style="background:#101010;border-radius:8px;padding:clamp(22px,2.5vw,30px);">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.7" style="flex:none;"><circle cx="12" cy="12" r="9.2"/><path d="m8.4 12 2.4 2.4 4.8-4.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div style="font-family:'Oswald';font-weight:700;line-height:1;">
+            <div style="color:#F8A91B;font-size:clamp(18px,2vw,23px);letter-spacing:.5px;">DBE CERTIFIED</div>
+            <div style="color:#fff;font-size:clamp(15px,1.7vw,19px);letter-spacing:.5px;">ELECTRICAL CONTRACTOR</div>
+          </div>
+        </div>
+        <p style="color:#d6d6d6;font-size:15px;line-height:1.6;margin-top:18px;">Proudly certified as a Disadvantaged Business Enterprise (DBE) committed to excellence and opportunity.</p>
+        <div style="background:#fff;border-radius:6px;margin-top:20px;padding:18px;display:flex;align-items:center;justify-content:center;gap:26px;">
+          <div style="text-align:center;">
+            <div style="width:62px;height:62px;border-radius:50%;background:#1b3a8c;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto;font-family:'Oswald';line-height:1;border:3px solid #16306f;">
+              <span style="font-size:9px;letter-spacing:.5px;margin-bottom:1px;">★ ★ ★</span>
+              <span style="font-weight:700;font-size:21px;">DBE</span>
+            </div>
+            <div style="font-size:8px;color:#1b3a8c;font-weight:700;letter-spacing:1px;margin-top:5px;">DISADVANTAGED<br>BUSINESS ENTERPRISE</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="font-family:'Oswald';font-weight:700;font-size:34px;color:#0a3b8c;line-height:.9;letter-spacing:-1px;">SBA</div>
+            <div style="font-size:8.5px;color:#0a3b8c;font-weight:600;letter-spacing:.5px;margin-top:3px;border-top:2px solid #0a3b8c;padding-top:3px;">U.S. Small Business<br>Administration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS ===== -->
+  <section id="reviews" style="background:#f4f3f1;padding:0 clamp(16px,4vw,52px) clamp(44px,5vw,68px);">
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:clamp(28px,3.5vw,42px);">
+      <span style="width:clamp(30px,6vw,60px);height:3px;background:#F8A91B;"></span>
+      <h2 style="font-family:'Oswald';font-weight:700;font-size:clamp(24px,3.2vw,36px);letter-spacing:1px;color:#141414;">WHAT OUR CLIENTS SAY</h2>
+      <span style="width:clamp(30px,6vw,60px);height:3px;background:#F8A91B;"></span>
+    </div>
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+      <div style="background:#fff;border:1px solid #eae8e3;border-radius:8px;padding:24px;box-shadow:0 1px 4px rgba(0,0,0,.05);">
+        <div style="color:#F8A91B;font-size:18px;letter-spacing:3px;margin-bottom:12px;">★★★★★</div>
+        <p style="font-size:14.5px;color:#444;line-height:1.6;font-style:italic;">"Ras and his team are top notch! Professional, on time, and his work is excellent. Highly recommend!"</p>
+        <div style="font-weight:700;font-size:14px;color:#141414;margin-top:16px;">– Jennifer B.</div>
+        <div style="font-size:13px;color:#888;">New Orleans, LA</div>
+      </div>
+      <div style="background:#fff;border:1px solid #eae8e3;border-radius:8px;padding:24px;box-shadow:0 1px 4px rgba(0,0,0,.05);">
+        <div style="color:#F8A91B;font-size:18px;letter-spacing:3px;margin-bottom:12px;">★★★★★</div>
+        <p style="font-size:14.5px;color:#444;line-height:1.6;font-style:italic;">"Great communication, fair pricing, and the job was done right the first time. The people's electrician for sure!"</p>
+        <div style="font-weight:700;font-size:14px;color:#141414;margin-top:16px;">– Marcus D.</div>
+        <div style="font-size:13px;color:#888;">Metairie, LA</div>
+      </div>
+      <div style="background:#fff;border:1px solid #eae8e3;border-radius:8px;padding:24px;box-shadow:0 1px 4px rgba(0,0,0,.05);">
+        <div style="color:#F8A91B;font-size:18px;letter-spacing:3px;margin-bottom:12px;">★★★★★</div>
+        <p style="font-size:14.5px;color:#444;line-height:1.6;font-style:italic;">"We've used Rise &amp; Shine for multiple projects. Always reliable and they stand behind their work."</p>
+        <div style="font-weight:700;font-size:14px;color:#141414;margin-top:16px;">– Tanya S.</div>
+        <div style="font-size:13px;color:#888;">Kenner, LA</div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:26px;">
+      <a href="#" style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid #e0ded9;border-radius:6px;padding:11px 22px;font-family:'Oswald';font-weight:500;font-size:14px;letter-spacing:.5px;color:#333;box-shadow:0 1px 4px rgba(0,0,0,.05);">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.5 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-2 3.2-4.9 3.2-7.9Z"/><path fill="#34A853" d="M12 23c2.9 0 5.4-1 7.2-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.6 1.1-2.8 0-5.1-1.9-6-4.4H2.3v2.8A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M6 14.3a6.6 6.6 0 0 1 0-4.2V7.3H2.3a11 11 0 0 0 0 9.8Z"/><path fill="#EA4335" d="M12 5.4c1.6 0 3 .5 4.1 1.6l3.1-3.1A11 11 0 0 0 2.3 7.3L6 10.1c.9-2.6 3.2-4.7 6-4.7Z"/></svg>
+        SEE MORE REVIEWS ON GOOGLE
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER CTA ===== -->
+  <section id="contact" style="background:#0b0b0b;padding:clamp(36px,4vw,52px) clamp(16px,4vw,52px);">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(28px,3vw,44px);align-items:start;">
+      <div>
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div style="width:56px;height:56px;border-radius:50%;background:#F8A91B;display:flex;align-items:center;justify-content:center;flex:none;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="#0b0b0b"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>
+          </div>
+          <div style="font-family:'Oswald';font-weight:700;line-height:1.05;">
+            <div style="color:#fff;font-size:clamp(18px,2vw,23px);letter-spacing:.5px;">NEED ELECTRICAL SERVICE?</div>
+            <div style="color:#F8A91B;font-size:clamp(18px,2vw,23px);letter-spacing:.5px;">WE'RE READY TO HELP!</div>
+          </div>
+        </div>
+        <p style="color:#bdbdbd;font-size:14.5px;line-height:1.6;margin-top:16px;max-width:340px;">Call, email, or fill out the form and we'll get back to you quickly.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:15px;">
+        <a href="tel:5046101298" style="display:flex;align-items:center;gap:12px;color:#e8e8e8;font-size:15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F8A91B"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>504-610-1298</a>
+        <a href="mailto:info@tpellec.com" style="display:flex;align-items:center;gap:12px;color:#e8e8e8;font-size:15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>info@tpellec.com</a>
+        <a href="https://www.tpellec.com" style="display:flex;align-items:center;gap:12px;color:#e8e8e8;font-size:15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18A14 14 0 0 1 12 3Z"/></svg>www.tpellec.com</a>
+        <div style="display:flex;align-items:center;gap:12px;color:#e8e8e8;font-size:15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F8A91B"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Serving Greater New Orleans</div>
+      </div>
+      <form onSubmit="{{ onSubmit }}" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <input type="text" placeholder="Your Name" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
+        <input type="tel" placeholder="Phone Number" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
+        <input type="email" placeholder="Email Address" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
+        <select style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#8a8a8a;font-size:14px;">
+          <option>Service Needed</option>
+          <option style="color:#000;">Electrical Inspections</option>
+          <option style="color:#000;">Panels &amp; Breakers</option>
+          <option style="color:#000;">LED Lighting</option>
+          <option style="color:#000;">Security Cameras</option>
+          <option style="color:#000;">Data / Internet</option>
+          <option style="color:#000;">Automation Systems</option>
+          <option style="color:#000;">Residential &amp; Commercial</option>
+        </select>
+        <textarea placeholder="Message" rows="2" style="grid-column:1/-1;background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;resize:vertical;"></textarea>
+        <button type="submit" style="grid-column:1/-1;background:#F8A91B;color:#0b0b0b;border:none;border-radius:4px;padding:13px;font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:1px;cursor:pointer;">SEND MESSAGE</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== BOTTOM BAR ===== -->
+  <footer style="background:#070707;border-top:3px solid #F8A91B;padding:16px clamp(16px,4vw,52px);display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;">
+    <div style="font-size:12.5px;color:#8f8f8f;">© 2024 Rise &amp; Shine Electrical, LLC. All Rights Reserved.</div>
+    <div style="display:flex;gap:12px;">
+      <a href="#" style="width:30px;height:30px;border-radius:50%;background:#F8A91B;display:flex;align-items:center;justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0b0b0b"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V8.9c0-.9.3-1.5 1.6-1.5h1.7V4.6c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.3V14h2.6v8Z"/></svg></a>
+      <a href="#" style="width:30px;height:30px;border-radius:50%;background:#F8A91B;display:flex;align-items:center;justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0b0b0b" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#0b0b0b" stroke="none"/></svg></a>
+      <a href="#" style="width:30px;height:30px;border-radius:50%;background:#F8A91B;display:flex;align-items:center;justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="#0b0b0b"><path d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.9h5.9a5 5 0 0 1-2.2 3.3v2.7h3.6c2.1-2 3.2-4.9 3.2-7.9ZM12 23c2.9 0 5.4-1 7.2-2.7l-3.6-2.7c-1 .7-2.2 1.1-3.6 1.1-2.8 0-5.1-1.9-6-4.4H2.3v2.8A11 11 0 0 0 12 23ZM6 14.3a6.6 6.6 0 0 1 0-4.2V7.3H2.3a11 11 0 0 0 0 9.8ZM12 5.4c1.6 0 3 .5 4.1 1.6l3.1-3.1A11 11 0 0 0 2.3 7.3L6 10.1c.9-2.6 3.2-4.7 6-4.7Z"/></svg></a>
+      <a href="#" style="width:30px;height:30px;border-radius:50%;background:#F8A91B;display:flex;align-items:center;justify-content:center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0b0b0b" stroke-width="1.8"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-5h6v5"/></svg></a>
+    </div>
+    <div style="font-size:12.5px;color:#9a9a9a;">State Licensed Master Electrician &nbsp;&nbsp;|&nbsp;&nbsp; DBE Certified Contractor</div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      onSubmit: (e) => {
+        e.preventDefault();
+        alert("Thanks! Your message has been sent. We'll get back to you quickly.");
+        e.target.reset();
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>
