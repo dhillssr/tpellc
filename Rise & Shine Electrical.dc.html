@@ -255,23 +255,27 @@
         <a href="https://www.tpellec.com" style="display:flex;align-items:center;gap:12px;color:#e8e8e8;font-size:15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F8A91B" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18A14 14 0 0 1 12 3Z"/></svg>www.tpellec.com</a>
         <div style="display:flex;align-items:center;gap:12px;color:#e8e8e8;font-size:15px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="#F8A91B"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>Serving Greater New Orleans</div>
       </div>
-      <form onSubmit="{{ onSubmit }}" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-        <input type="text" placeholder="Your Name" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
-        <input type="tel" placeholder="Phone Number" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
-        <input type="email" placeholder="Email Address" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
-        <select style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#8a8a8a;font-size:14px;">
-          <option>Service Needed</option>
-          <option style="color:#000;">Electrical Inspections</option>
-          <option style="color:#000;">Panels &amp; Breakers</option>
-          <option style="color:#000;">LED Lighting</option>
-          <option style="color:#000;">Security Cameras</option>
-          <option style="color:#000;">Data / Internet</option>
-          <option style="color:#000;">Automation Systems</option>
-          <option style="color:#000;">Residential &amp; Commercial</option>
-        </select>
-        <textarea placeholder="Message" rows="2" style="grid-column:1/-1;background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;resize:vertical;"></textarea>
-        <button type="submit" style="grid-column:1/-1;background:#F8A91B;color:#0b0b0b;border:none;border-radius:4px;padding:13px;font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:1px;cursor:pointer;">SEND MESSAGE</button>
-      </form>
+      <div>
+        <div data-fs-success style="color:#4ade80;font-size:14px;margin-bottom:8px;"></div>
+        <div data-fs-error style="color:#f87171;font-size:14px;margin-bottom:8px;"></div>
+        <form id="contact-form" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+          <input type="text" name="name" data-fs-field placeholder="Your Name" required style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
+          <input type="tel" name="phone" data-fs-field placeholder="Phone Number" style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
+          <input type="email" name="email" data-fs-field placeholder="Email Address" required style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;">
+          <select name="service" data-fs-field style="background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#8a8a8a;font-size:14px;">
+            <option>Service Needed</option>
+            <option style="color:#000;">Electrical Inspections</option>
+            <option style="color:#000;">Panels &amp; Breakers</option>
+            <option style="color:#000;">LED Lighting</option>
+            <option style="color:#000;">Security Cameras</option>
+            <option style="color:#000;">Data / Internet</option>
+            <option style="color:#000;">Automation Systems</option>
+            <option style="color:#000;">Residential &amp; Commercial</option>
+          </select>
+          <textarea name="message" data-fs-field placeholder="Message" rows="2" required style="grid-column:1/-1;background:#161616;border:1px solid #2c2c2c;border-radius:4px;padding:11px 13px;color:#fff;font-size:14px;resize:vertical;"></textarea>
+          <button type="submit" data-fs-submit-btn style="grid-column:1/-1;background:#F8A91B;color:#0b0b0b;border:none;border-radius:4px;padding:13px;font-family:'Oswald';font-weight:600;font-size:16px;letter-spacing:1px;cursor:pointer;">SEND MESSAGE</button>
+        </form>
+      </div>
     </div>
   </section>
 
@@ -289,18 +293,10 @@
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  renderVals() {
-    return {
-      onSubmit: (e) => {
-        e.preventDefault();
-        alert("Thanks! Your message has been sent. We'll get back to you quickly.");
-        e.target.reset();
-      },
-    };
-  }
-}
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'mqevzavb' });
 </script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
